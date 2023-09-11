@@ -1,0 +1,182 @@
+body._lock {
+    overflow: hidden;
+}
+
+.header {
+    background: #333;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 50px;
+    width: 100%;
+}
+.header__list_wrapper{
+  width: 100%;
+}
+.header__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header__logo {
+    color: #fff;
+    font-family: Lato;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+
+    & span {
+        color: #DA9036;
+        ;
+    }
+}
+
+.header__link {
+    color: #FFF;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.header__logo_burger {
+    display: none;
+    color: #fff;
+    font-family: Lato;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+
+    & span {
+        color: #DA9036;
+        ;
+    }
+
+}
+
+.burger__icon {
+    display: none;
+}
+
+@media (max-width:767px) {
+    .burger__icon {
+        z-index: 21;
+        display: block;
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+      }
+      .burger__icon span, .burger__icon::before, .burger__icon::after {
+        left: 0;
+        position: absolute;
+        height: 10%;
+        width: 100%;
+        transition: all 0.3s ease 0s;
+        -webkit-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -ms-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        background-color: #fff;
+      }
+      .burger__icon::before, .burger__icon::after {
+        content: "";
+      }
+      .burger__icon::before {
+        top: 0;
+      }
+      .burger__icon::after {
+        bottom: 0;
+      }
+      .burger__icon span {
+        top: 50%;
+        transform: scale(1) translate(0px, -50%);
+        -webkit-transform: scale(1) translate(0px, -50%);
+        -moz-transform: scale(1) translate(0px, -50%);
+        -ms-transform: scale(1) translate(0px, -50%);
+        -o-transform: scale(1) translate(0px, -50%);
+      }
+      .header__nav{
+        align-items: center;
+      }
+      .header__list_wrapper {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: #333333;
+        padding: 100px 30px;
+        transition: left 0.3s ease 0s;
+        -webkit-transition: left 0.3s ease 0s;
+        -moz-transition: left 0.3s ease 0s;
+        -ms-transition: left 0.3s ease 0s;
+        -o-transition: left 0.3s ease 0s;
+        flex-direction: column;
+        gap: 60px;
+        overflow: auto;
+        z-index: 20;
+      }
+      .header__list{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .header__link{
+        font-size: 24px;
+      }
+      .header__list_wrapper._active {
+        left: 0;
+      }
+      .header__logo_burger {
+        font-size: 36px;
+      }
+      .burger__icon._active span {
+        transform: scale(0) translate(0px, -50%);
+        -webkit-transform: scale(0) translate(0px, -50%);
+        -moz-transform: scale(0) translate(0px, -50%);
+        -ms-transform: scale(0) translate(0px, -50%);
+        -o-transform: scale(0) translate(0px, -50%);
+      }
+      .burger__icon._active::after {
+        bottom: 50%;
+        transform: rotate(45deg) translate(0px, 50%);
+        -webkit-transform: rotate(45deg) translate(0px, 50%);
+        -moz-transform: rotate(45deg) translate(0px, 50%);
+        -ms-transform: rotate(45deg) translate(0px, 50%);
+        -o-transform: rotate(45deg) translate(0px, 50%);
+      }
+      .burger__icon._active::before {
+        top: 50%;
+        transform: rotate(-45deg) translate(0px, -50%);
+        -webkit-transform: rotate(-45deg) translate(0px, -50%);
+        -moz-transform: rotate(-45deg) translate(0px, -50%);
+        -ms-transform: rotate(-45deg) translate(0px, -50%);
+        -o-transform: rotate(-45deg) translate(0px, -50%);
+      }
+      .header__logo_burger {
+        display: inline;
+      }
+}
+@media (max-width: 576px) {
+  .header__nav{
+    padding: 20px 25px;
+  }
+}

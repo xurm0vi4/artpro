@@ -1,0 +1,117 @@
+.footer {
+    margin-top: 100px;
+    background-color: #333;
+    padding: 30px 0;
+}
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.footer__logo-wrapper {
+
+}
+.footer__logo {
+    color: #FFF;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: normal; 
+    text-decoration: none;
+    & span{
+        color: #DA9036;
+    }
+}
+.footer__list {
+    & li:not(:first-child){
+        margin-top: 10px;
+    }
+}
+.footer__link {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal; 
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.footer__line {
+    width: 1px;
+    height: 190px;
+    background-color: #fff;
+}
+.footer__tel-wrapper {
+}
+.footer__tel-title {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal; 
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.footer__tel-list {
+    & li{
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal; 
+    margin-top: 10px;
+    }
+}
+.footer__email-wrapper {
+}
+.footer__email-title {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal; 
+    display: inline-block;
+    
+}
+.footer__email {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal; 
+    margin-top: 20px;
+}
+.footer__address-wrapper {
+}
+.footer__address-title {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal; 
+    display: inline-block;
+}
+.footer__address {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal; 
+    margin-top: 20px;
+}
+
+@media (max-width: 991px) {
+    .footer__line{
+        display: none;
+    }
+    .footer__container {
+        gap: 50px;
+        justify-content: space-evenly;
+    }
+}
+
+@media(max-width: 576px){
+    .footer__logo {
+        font-size: 30px;
+    }
+    .footer__link {
+        padding-right: 36px;
+    }
+    
+}
+

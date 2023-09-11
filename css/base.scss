@@ -1,0 +1,131 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@font-face {
+    font-family: 'Lato-Light';
+    src: url('../fonts/Lato-Light.eot');
+    src: url('../fonts/Lato-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Lato-Light.woff') format('woff'),
+        url('../fonts/Lato-Light.ttf') format('truetype'),
+        url('../fonts/Lato-Light.svg#Lato-Light') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Medium.eot');
+    src: url('../fonts/Lato-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Lato-Medium.woff') format('woff'),
+        url('../fonts/Lato-Medium.ttf') format('truetype'),
+        url('../fonts/Lato-Medium.svg#Lato-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Bold.eot');
+    src: url('../fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Lato-Bold.woff') format('woff'),
+        url('../fonts/Lato-Bold.ttf') format('truetype'),
+        url('../fonts/Lato-Bold.svg#Lato-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-SemiBold.eot');
+    src: url('../fonts/Lato-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Lato-SemiBold.woff') format('woff'),
+        url('../fonts/Lato-SemiBold.ttf') format('truetype'),
+        url('../fonts/Lato-SemiBold.svg#Lato-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+.wrapper{
+	min-height: 100%;
+}
+.container{
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+}

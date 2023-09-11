@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>ARTPRO</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <nav class="header__nav container">
+                <a href="main.html" class="header__logo_burger">ART<span>PRO</span></a>
+                <div class="burger__icon">
+                    <span></span>
+                </div>
+                <div class="header__list_wrapper">
+                    <ul class="header__list">
+                        <li><a href="main.html" class="header__logo">ART<span>PRO</span></a></li>
+                        <li><a href="main.html" class="header__link">ГОЛОВНА</a></li>
+                        <li><a href="services.html" class="header__link">ПОСЛУГИ</a></li>
+                        <li><a href="contacts.html" class="header__link">КОНТАКТИ</a></li>
+                        <li><a href="about-us.html" class="header__link">ПРО НАС</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main class="main">
+            <div class="intro__wrapper">
+                <section class="intro container">
+                    <h1 class="intro__title">ART<span>PRO</span></h1>
+                    <p class="intro__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec orci non nisl tempus 
+                        ullamcorper. Vestibulum maximus venenatis massa, vitae.</p>
+                </section>
+            </div>
+            <section class="services container">
+                <h2 class="services__title">Наші послуги</h2>
+                <div class="services__cards">
+                    <div class="services__card">
+                        <h3 class="services__card-title">Встановлення</h3>
+                        <p class="services__card-text">Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit. 
+                            Phasellus nec orci non nisl 
+                            tempus ullamcorper. 
+                            Vestibulum maximus venenatis 
+                            massa, vitae.</p>
+                        <a href="#" class="services__card-button">Детальніше</a>
+                    </div>
+                    <div class="services__card">
+                        <h3 class="services__card-title">Встановлення</h3>
+                        <p class="services__card-text">Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit. 
+                            Phasellus nec orci non nisl 
+                            tempus ullamcorper. 
+                            Vestibulum maximus venenatis 
+                            massa, vitae.</p>
+                        <a href="#" class="services__card-button">Детальніше</a>
+                    </div>
+                    <div class="services__card">
+                        <h3 class="services__card-title">Встановлення</h3>
+                        <p class="services__card-text">Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit. 
+                            Phasellus nec orci non nisl 
+                            tempus ullamcorper. 
+                            Vestibulum maximus venenatis 
+                            massa, vitae.</p>
+                        <a href="#" class="services__card-button">Детальніше</a>
+                    </div>
+                </div>
+            </section>
+            <section class="advantages container">
+                <h2 class="advantages__title">Наші переваги</h2>
+                <div class="advantages__cards">
+                    <div class="advantages__card">
+                        <img src="img/shield.svg" alt="shield" class="advantages__card-icon">
+                        <h3 class="advantages__card-title">Надійність</h3>
+                        <p class="advantages__card-text">Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit. 
+                            Phasellus nec orci non nisl 
+                            tempus ullamcorper. 
+                            Vestibulum maximus venenatis 
+                            massa, vitae.</p>
+                        <a href="#" class="advantages__card-button">Детальніше</a>
+                    </div>
+                    <div class="advantages__card">
+                        <img src="img/speed.svg" alt="speed" class="advantages__card-icon">
+                        <h3 class="advantages__card-title">Швидкість роботи</h3>
+                        <p class="advantages__card-text">Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit. 
+                            Phasellus nec orci non nisl 
+                            tempus ullamcorper. 
+                            Vestibulum maximus venenatis 
+                            massa, vitae.</p>
+                        <a href="#" class="advantages__card-button">Детальніше</a>
+                    </div>
+                    <div class="advantages__card">
+                        <img src="img/coins.svg" alt="coins" class="advantages__card-icon">
+                        <h3 class="advantages__card-title">Вигідні ціни</h3>
+                        <p class="advantages__card-text">Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit. 
+                            Phasellus nec orci non nisl 
+                            tempus ullamcorper. 
+                            Vestibulum maximus venenatis 
+                            massa, vitae.</p>
+                        <a href="#" class="advantages__card-button">Детальніше</a>
+                    </div>
+                </div>
+            </section>
+            <section class="works container">
+                <h2 class="works__title">Наші роботи</h2>
+                <div id="works__btns">
+                    <button class="works__btn works__btn-prev"><img src="img/arrow-left.png" alt="arrow-left"></button>
+                    <button class="works__btn works__btn-next"><img src="img/arrow-right.png" alt="arrow-right"></button>
+                </div>
+                <div class="works__fullimg-box" id="fullImgBox">
+                    <img src="" alt="" id="fullImg">
+                    <img src="img/close-icon.png" alt="close-icon" class="closeImage">
+                </div>
+                <div class="works__gallery" id="gallery" onclick="galleryInit(event)">
+                    <img src="img/gallery1.jpg" alt="work">
+                    <img src="img/gallery2.jpg" alt="work">
+                    <img src="img/gallery3.jpg" alt="work">
+                    <img src="img/gallery4.jpg" alt="work">
+                    <img src="img/gallery5.jpg" alt="work">
+                    <img src="img/gallery1.jpg" alt="work">
+                    <img src="img/gallery2.jpg" alt="work">
+                    <img src="img/gallery3.jpg" alt="work">
+                    <img src="img/gallery4.jpg" alt="work">
+                    <img src="img/gallery5.jpg" alt="work">
+                </div>
+            </section>
+            <section class="message container">
+                <h2 class="message__title">Залиште нам повідомлення</h2>
+                <div class="message__form">
+                    <form action="#" id="form" class="form__body">
+                        <img src="img/envelope.svg" alt="envelope" class="form__icon">
+                        <div class="form__item">
+                            <input id="formName" placeholder="Введіть ваше ім'я" type="text" class="form__input">
+                        </div>
+                        <div class="form__item">
+                            <input id="formTel" placeholder="Введіть ваш телефон" type="text" class="form__input">
+                        </div>
+                        <div class="form__item">
+                            <input id="formEmail" placeholder="Введіть ваш email" type="text" class="form__input">
+                        </div>
+                        <div class="form__item">
+                            <textarea name="message" id="formMessage" placeholder="Введіть ваше повідомлення" class="form__textarea"></textarea>
+                        </div>
+                        <button class="form__button">Відправити</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container container">
+                <div class="footer__logo-wrapper">
+                    <a href="main.html" class="footer__logo">ART<span>PRO</span></a>
+                </div>
+                <ul class="footer__list">
+                    <li><a href="main.html" class="footer__link">Головна</a></li>
+                    <li><a href="services.html" class="footer__link">Послуги</a></li>
+                    <li><a href="contacts.html" class="footer__link">Контакти</a></li>
+                    <li><a href="about-us.html" class="footer__link">Про нас</a></li>
+                </ul>
+                <div class="footer__line"></div>
+                <div class="footer__tel-wrapper">
+                    <h4 class="footer__tel-title">Телефони:</h4>
+                    <ul class="footer__tel-list">
+                        <li>+38 095 000 00 00 </li>
+                        <li>+38 050 000 00 00 </li>
+                    </ul>
+                </div>
+                <div class="footer__email-wrapper">
+                    <h4 class="footer__email-title">Email:</h4>
+                    <p class="footer__email">email@gmail.com</p>
+                </div>
+                <div class="footer__address-wrapper">
+                    <h4 class="footer__address-title">Адреса:</h4>
+                    <p class="footer__address">м. Київ, вул. Оноре де Бальзака 1</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
