@@ -2,18 +2,21 @@
 @import "header.css";
 @import "footer.css";
 
-//about us
+//about us blocks
 
 .aboutus {
-    margin-top: 100px;
+    margin-top: 200px;
 }
 .aboutus__block {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 100px;
 }
 .aboutus__img {
-    max-width: 45%;
+    width: 45%;
+    max-height: 500px;
+    object-fit: cover;
 }
 .aboutus__text {
     max-width: 45%;
@@ -128,8 +131,29 @@
 
 @media (max-width: 991px) {}
 
-@media (max-width: 576px) {
+@media (max-width: 767px) {
+    .aboutus__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 100px;
+    }
+    .aboutus__img {
+        width: 45%;
+        max-height: 500px;
+        object-fit: cover;
+    }
+    .aboutus__text {
+        max-width: 45%;
+        font-size: 16px;
+    }
+}
 
+@media (max-width: 576px) {
+    .aboutus__text {
+        max-width: 45%;
+        font-size: 14px;
+    }
     //message
 
     .form__input {

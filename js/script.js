@@ -96,3 +96,49 @@ function galleryInit(event){
     }
 }
 
+//scroll to message
+
+const buttonMessage = document.querySelector('.intro__button-form');
+const messageForm = document.querySelector('.message');
+
+buttonMessage.addEventListener('click', onButtonClick);
+
+function onButtonClick(e) {
+    const button = e.target;
+    if (button.dataset.goto && document.querySelector(button.dataset.goto)) {
+        const gotoBlock = document.querySelector(button.dataset.goto);
+        const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight;
+
+
+        window.scrollTo({
+            top: gotoBlockValue,
+            behavior: "smooth"
+        });
+        e.preventDefault();
+        console.log(gotoBlockValue)
+    }
+}
+
+//scroll to top
+
+const goTopBtn = document.querySelector('.go-top');
+
+goTopBtn.addEventListener('click', goTop)
+window.addEventListener('scroll', trackScroll);
+
+function goTop(){
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+
+function trackScroll(){
+    const offset = window.pageYOffset;
+    const coords = document.documentElement.clientHeight;
+    if(offset > coords){
+        goTopBtn.classList.add('go-top_show');
+    } else{
+        goTopBtn.classList.remove('go-top_show');
+    }
+}

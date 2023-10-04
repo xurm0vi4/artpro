@@ -1,13 +1,14 @@
 .footer {
     margin-top: 100px;
     background-color: #333;
-    padding: 30px 0;
+    padding-top: 30px ;
 }
 .footer__container {
     display: flex;
     justify-content: space-between;
     gap: 30px;
     flex-wrap: wrap;
+    padding-bottom: 30px;
 }
 .footer__logo-wrapper {
 
@@ -15,12 +16,16 @@
 .footer__logo {
     color: #FFF;
     font-size: 36px;
-    font-weight: 600;
+    font-weight: 700;
     line-height: normal; 
     text-decoration: none;
     & span{
         color: #DA9036;
     }
+    
+    &:hover{
+        text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+      }
 }
 .footer__list {
     & li:not(:first-child){
@@ -31,22 +36,29 @@
     color: #FFF;
     font-size: 16px;
     font-weight: 400;
-    line-height: normal; 
+    line-height: normal;
     text-decoration: none;
+    transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
+    -moz-transition: all 0.2s ease 0s;
+    -ms-transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
     &:hover{
-        text-decoration: underline;
+        color: #DA9036;
     }
 }
-.footer__line {
-    width: 1px;
-    height: 190px;
-    background-color: #fff;
+.footer__link-title{
+    margin-bottom: 20px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
 }
 .footer__tel-wrapper {
 }
 .footer__tel-title {
     color: #FFF;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     line-height: normal; 
     display: inline-block;
@@ -59,13 +71,16 @@
     font-weight: 400;
     line-height: normal; 
     margin-top: 10px;
+    &:hover{
+        color: #DA9036;
+    }
     }
 }
 .footer__email-wrapper {
 }
 .footer__email-title {
     color: #FFF;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     line-height: normal; 
     display: inline-block;
@@ -77,12 +92,15 @@
     font-weight: 400;
     line-height: normal; 
     margin-top: 20px;
+    &:hover{
+        color: #DA9036;
+    }
 }
 .footer__address-wrapper {
 }
 .footer__address-title {
     color: #FFF;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     line-height: normal; 
     display: inline-block;
@@ -93,6 +111,18 @@
     font-weight: 400;
     line-height: normal; 
     margin-top: 20px;
+    &:hover{
+        color: #DA9036;
+    }
+}
+
+.footer__bottom{
+    background-color: #373737;
+    padding: 10px 0;
+    text-align: center;
+    color: #FFF;
+    font-size: 14px;
+    line-height: normal;
 }
 
 @media (max-width: 991px) {
@@ -100,8 +130,14 @@
         display: none;
     }
     .footer__container {
-        gap: 50px;
+        padding-left: 50px;
+        flex-direction: column;
+        gap: 40px;
         justify-content: space-evenly;
+    }
+    .footer__bottom{
+        padding-left: 35px;
+        text-align: left;
     }
 }
 
@@ -112,6 +148,11 @@
     .footer__link {
         padding-right: 36px;
     }
-    
+    .footer__container {
+        padding-left: 25px;
+    }
+    .footer__bottom{
+        padding-left: 10px;
+    }
 }
 
