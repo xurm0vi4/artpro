@@ -1,11 +1,19 @@
 @import "base.css";
 @import "header.css";
 @import "footer.css";
+@import "form.css";
 
 //about us blocks
 
 .aboutus {
     margin-top: 200px;
+}
+.aboutus__title {
+    color: #000;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
 }
 .aboutus__block {
     display: flex;
@@ -15,113 +23,36 @@
 }
 .aboutus__img {
     width: 45%;
-    max-height: 500px;
+    height: 500px;
     object-fit: cover;
 }
 .aboutus__text {
-    max-width: 45%;
+    width: 45%;
     font-size: 20px;
+    font-weight: 400;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
 }
 
-//message
-
-.message {
+//counter
+.counter{
     margin-top: 100px;
 }
-
-.message__title {
-    color: #000;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: normal;
+.counter__row {
+    display: flex;
+    justify-content: space-evenly;
     text-align: center;
 }
-
-.message__form {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 50px 100px;
-    background: #FFF;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-    margin-top: 80px;
-}
-
-.form__body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
+.counter__title {
+    font-size: 45px;
+    font-weight: 700;
 
 }
-
-.form__icon {}
-
-.form__item {}
-
-.form__input {
-    height: 50px;
-    width: 400px;
-    border: 3px solid #333;
-    padding: 15px 20px;
-    align-items: center;
-
-    &::placeholder {
-        color: rgba(0, 0, 0, 0.50);
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-    }
-
-    &:focus {
-        background-color: rgba(51, 51, 51, 0.05);
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-    }
-}
-
-.form__textarea {
-    width: 400px;
-    min-height: 150px;
-    padding: 15px 20px;
-    border: 3px solid #333;
-    resize: vertical;
-
-    &::placeholder {
-        color: rgba(0, 0, 0, 0.50);
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-    }
-
-    &:focus {
-        background-color: rgba(51, 51, 51, 0.05);
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-    }
-}
-
-.form__button {
-    color: #FFF;
-    font-size: 16px;
-    font-style: normal;
+.counter__number {
+    margin-top: 20px;
+    font-size: 30px;
     font-weight: 600;
-    line-height: normal;
-    padding: 15px 55px;
-    background-color: #333;
-    outline: none;
-    border: none;
-    cursor: pointer;
-
-    &:hover {
-        background-color: rgba(51, 51, 51, 0.9);
-    }
-
-    transition: all 0.2s ease 0s;
-    -webkit-transition: all 0.2s ease 0s;
-    -moz-transition: all 0.2s ease 0s;
-    -ms-transition: all 0.2s ease 0s;
-    -o-transition: all 0.2s ease 0s;
 }
+
 
 //footer
 
@@ -129,44 +60,51 @@
     margin-top: -6px;
 }
 
-@media (max-width: 991px) {}
+@media (max-width: 991px) {
+    .counter__title {
+        font-size: 42px;
+    }
+}
 
 @media (max-width: 767px) {
+    .aboutus__img {
+        width: 100%;
+        margin-top: 100px;
+    }
+    .aboutus__text {
+        width: 100%;
+        font-size: 20px;
+    }
     .aboutus__block {
+    }
+    .aboutus__block1 {
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .aboutus__block2 {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 100px;
+        flex-direction: column;
     }
-    .aboutus__img {
-        width: 45%;
-        max-height: 500px;
-        object-fit: cover;
+    //counter
+
+    .counter__row {
+        flex-direction: column;
+        gap: 30px;
     }
-    .aboutus__text {
-        max-width: 45%;
-        font-size: 16px;
+    .counter__title {
+        font-size: 42px;
+    
     }
 }
 
 @media (max-width: 576px) {
     .aboutus__text {
-        max-width: 45%;
-        font-size: 14px;
+        font-size: 18px;
     }
-    //message
-
-    .form__input {
-        height: 50px;
-        width: 250px;
-        border: 3px solid #333;
-        padding: 15px 20px;
-        align-items: center;
-
-    }
-
-    .form__textarea {
-        width: 250px;
-        min-height: 100px;
+    .aboutus__img{
+        height: 300px;
     }
 }

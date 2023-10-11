@@ -31,7 +31,8 @@
 }
 
 .footer__link {
-  color: #FFF;
+  position: relative;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 400;
   line-height: normal;
@@ -42,8 +43,25 @@
   -ms-transition: all 0.2s ease 0s;
   -o-transition: all 0.2s ease 0s;
 }
+.footer__link::after {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #DA9036;
+  content: "";
+  transition: width 0.2s ease 0s;
+  -webkit-transition: width 0.2s ease 0s;
+  -moz-transition: width 0.2s ease 0s;
+  -ms-transition: width 0.2s ease 0s;
+  -o-transition: width 0.2s ease 0s;
+}
 .footer__link:hover {
   color: #DA9036;
+}
+.footer__link:hover::after {
+  width: 100%;
 }
 
 .footer__link-title {
@@ -70,9 +88,6 @@
   line-height: normal;
   margin-top: 10px;
 }
-.footer__tel-list li:hover {
-  color: #DA9036;
-}
 
 .footer__email-title {
   color: #FFF;
@@ -89,9 +104,6 @@
   line-height: normal;
   margin-top: 20px;
 }
-.footer__email:hover {
-  color: #DA9036;
-}
 
 .footer__address-title {
   color: #FFF;
@@ -107,9 +119,6 @@
   font-weight: 400;
   line-height: normal;
   margin-top: 20px;
-}
-.footer__address:hover {
-  color: #DA9036;
 }
 
 .footer__bottom {

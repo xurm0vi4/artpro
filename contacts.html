@@ -25,19 +25,61 @@
                 </div>
             </nav>
         </header>
-        <main class="main"></main>
+        <main class="main">
+            <div class="contacts">
+                <section class="contacts__container container">
+                    <h2 class="contacts__title">Наші контакти</h2>
+                    <p class="contacts__subtitle">Зв'яжіться з нами будь-яким зручним для вас способом.</p>
+                    <div class="contacts__content">
+                        <div class="contacts__main">
+                            <h4 class="contacts__content-title tel-title">Телефони:</h4>
+                            <p class="contacts__tel">+38 095 000 0000</p>
+                            <p class="contacts__tel">+38 050 000 0000</p>
+                            <h4 class="contacts__content-title email-title">Email:</h4>
+                            <p class="contacts__email">email@gmail.com</p>
+                            <h4 class="contacts__content-title address-title">Адреса:</h4>
+                            <p class="contacts__address">М. Київ, вул. Оноре де Бальзака 1</p>
+                            <button data-goto=".map" class="contacts__button">Перейти до мапи</button>
+                        </div>
+                        <img src="img/contacts.jpg" alt="contact" class="contacts__img">
+                    </div>
+                </section>
+            </div>
+            <section class="message container">
+                <h2 class="message__title">Залиште нам повідомлення</h2>
+                <div class="message__form">
+                    <form action="#" id="form" class="form__body">
+                        
+                        <div class="form__item">
+                            <input id="formName" placeholder="Введіть ваше ім'я" type="text" class="form__input">
+                        </div>
+                        <div class="form__item">
+                            <input id="formTel" placeholder="Введіть ваш телефон" type="text" class="form__input">
+                        </div>
+                        <div class="form__item">
+                            <input id="formEmail" placeholder="Введіть ваш email" type="text" class="form__input">
+                        </div>
+                        <div class="form__item">
+                            <textarea name="message" id="formMessage" placeholder="Введіть ваше повідомлення" class="form__textarea"></textarea>
+                        </div>
+                        <button class="form__button">Відправити</button>
+                    </form>
+                </div>
+            </section>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4654.568020517352!2d30.577618758135856!3d50.498423182504645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d1b79d6f6a51%3A0x2a3b0a9c8bff779a!2z0YPQuy4g0J7QvdC-0YDQtSDQtNC1INCR0LDQu9GM0LfQsNC60LAsIDIsINCa0LjQtdCyLCAwMjAwMA!5e0!3m2!1sru!2sua!4v1694513997524!5m2!1sru!2sua" width="100%" height="650"  class="map" style="border: none; margin-top: 150px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+        </main>
         <footer class="footer">
             <div class="footer__container container">
                 <div class="footer__logo-wrapper">
                     <a href="index.html" class="footer__logo">ART<span>PRO</span></a>
                 </div>
                 <ul class="footer__list">
+                    <li class="footer__link-title">Навігація по сайту</li>
                     <li><a href="index.html" class="footer__link">Головна</a></li>
                     <li><a href="services.html" class="footer__link">Послуги</a></li>
                     <li><a href="contacts.html" class="footer__link">Контакти</a></li>
                     <li><a href="about-us.html" class="footer__link">Про нас</a></li>
                 </ul>
-                <div class="footer__line"></div>
                 <div class="footer__tel-wrapper">
                     <h4 class="footer__tel-title">Телефони:</h4>
                     <ul class="footer__tel-list">
@@ -54,8 +96,14 @@
                     <p class="footer__address">м. Київ, вул. Оноре де Бальзака 1</p>
                 </div>
             </div>
+            <div class="footer__bottom">
+                <div class="footer__bottom-container container">
+                    <p class="footer__copyright">© ARTPRO, 2023. Всі права захищені.</p>
+                </div>
+            </div>
         </footer>
+        <img src="img/arrow-top.svg" alt="arrow" class="go-top">
     </div>
-    <script src="js/script.js"></script>
+    <script src="js/contacts.js"></script>
 </body>
 </html>

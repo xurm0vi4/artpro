@@ -1,6 +1,7 @@
 @import "base.css";
 @import "header.css";
 @import "footer.css";
+@import "form.css";
 .main {
   position: relative;
 }
@@ -88,14 +89,6 @@
   background-color: #222;
 }
 
-.services__title {
-  color: #000;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: normal;
-  text-align: center;
-}
-
 .services__container {
   display: flex;
   justify-content: space-between;
@@ -103,7 +96,7 @@
 }
 
 .services__img {
-  max-width: 45%;
+  width: 45%;
   height: 500px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -147,6 +140,7 @@
   -moz-transition: all 0.5s ease 0s;
   -ms-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
+  text-align: center;
 }
 .services__button:hover {
   background-color: #fff;
@@ -205,23 +199,6 @@
   color: #7e7e7e;
   text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
   font-size: 16px;
-}
-
-.advantages__card-button {
-  color: #FFF;
-  text-align: center;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: normal;
-  text-decoration: none;
-  transition: all 0.5s ease 0s;
-  -webkit-transition: all 0.5s ease 0s;
-  -moz-transition: all 0.5s ease 0s;
-  -ms-transition: all 0.5s ease 0s;
-  -o-transition: all 0.5s ease 0s;
-}
-.advantages__card-button:hover {
-  text-decoration: underline;
 }
 
 .works {
@@ -321,18 +298,8 @@
   border: none;
   cursor: pointer;
   width: 50px;
-  height: 50px;
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 25%;
-  -webkit-border-radius: 25%;
-  -moz-border-radius: 25%;
-  -ms-border-radius: 25%;
-  -o-border-radius: 25%;
-  transition: all 0.5s ease 0s;
-  -webkit-transition: all 0.5s ease 0s;
-  -moz-transition: all 0.5s ease 0s;
-  -ms-transition: all 0.5s ease 0s;
-  -o-transition: all 0.5s ease 0s;
+  height: 80%;
+  background: transparent;
 }
 
 .works__btn-next {
@@ -343,107 +310,6 @@
   left: 30px;
 }
 
-.message {
-  margin-top: 100px;
-}
-
-.message__title {
-  color: #000;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: normal;
-  text-align: center;
-}
-
-.message__form {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 50px 100px;
-  background: #FFF;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-  margin-top: 80px;
-}
-
-.form__body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-}
-
-.form__input {
-  height: 50px;
-  width: 400px;
-  border: 3px solid #333;
-  padding: 15px 20px;
-  align-items: center;
-}
-.form__input::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.form__input::placeholder {
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.form__input:focus {
-  background-color: rgba(51, 51, 51, 0.05);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-}
-
-.form__textarea {
-  width: 400px;
-  min-height: 150px;
-  padding: 15px 20px;
-  border: 3px solid #333;
-  resize: vertical;
-}
-.form__textarea::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.form__textarea::placeholder {
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.form__textarea:focus {
-  background-color: rgba(51, 51, 51, 0.05);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-}
-
-.form__button {
-  color: #FFF;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  padding: 15px 55px;
-  background-color: #333;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  transition: all 0.2s ease 0s;
-  -webkit-transition: all 0.2s ease 0s;
-  -moz-transition: all 0.2s ease 0s;
-  -ms-transition: all 0.2s ease 0s;
-  -o-transition: all 0.2s ease 0s;
-}
-.form__button:hover {
-  background-color: rgba(51, 51, 51, 0.9);
-}
-
 @media (max-width: 991px) {
   .intro__wrapper {
     padding: 280px 30px;
@@ -452,7 +318,7 @@
     padding: 30px 55px;
   }
   .services__img {
-    max-width: 47%;
+    width: 47%;
     height: 500px;
     -o-object-fit: cover;
        object-fit: cover;
@@ -489,15 +355,16 @@
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;
+    align-items: start;
   }
   .services__img {
-    max-width: 100%;
+    width: 100%;
     height: 500px;
     -o-object-fit: cover;
        object-fit: cover;
   }
   .services__content {
-    max-width: 100%;
+    max-width: 70%;
     padding: 50px 0;
   }
   .services__content-subtitle {
@@ -514,10 +381,6 @@
   }
   .works__gallery img {
     width: 45%;
-  }
-  .works__btn {
-    height: 30px;
-    width: 30px;
   }
 }
 @media (max-width: 576px) {
@@ -542,10 +405,21 @@
   .intro__button {
     font-size: 14px;
     font-weight: 600;
-    padding: 12px 30px;
+    padding: 10px 30px;
+  }
+  .services__img {
+    height: 300px;
+  }
+  .services__content {
+    max-width: 95%;
+    padding: 50px 0;
   }
   .advantages__card {
     width: 75%;
+  }
+  .works__btn {
+    height: 40px;
+    width: 40px;
   }
   .works__btn-next {
     right: 5px;
@@ -562,16 +436,5 @@
   }
   .works__fullimg-box img {
     max-width: 75%;
-  }
-  .form__input {
-    height: 50px;
-    width: 250px;
-    border: 3px solid #333;
-    padding: 15px 20px;
-    align-items: center;
-  }
-  .form__textarea {
-    width: 250px;
-    min-height: 100px;
   }
 }/*# sourceMappingURL=main.css.map */

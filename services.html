@@ -25,19 +25,101 @@
                 </div>
             </nav>
         </header>
-        <main class="main"></main>
+        <main class="main">
+            <div class="services">
+                <section class="services__container container">
+                    <h2 class="services__title">Наші послуги</h2>
+                    <div class="services__block">
+                        <div class="services__content">
+                            <h3 class="services__content-title">Проектування та виготовлення виробів:</h3>
+                            <p class="services__content-text">Наші експерти готові запропонувати вам рішення, що підкреслять унікальність вашого простору, включаючи <span>перила, козирки, огорожі, балкони, велопарковки, столи, сходи тощо.</span> </p>
+                            <button data-goto=".works" class="services__content-button">Приклади наших робіт</button>
+                        </div>
+                        <img src="img/services-designing.jpg" alt="designing" class="services__img">
+                    </div>
+                    <div class="gap"></div>
+                    <div class="services__block">
+                        <div class="services__content">
+                            <h3 class="services__content-title">Монтаж:</h3>
+                            <p class="services__content-text">Наша команда професіоналів з великою увагою до деталей готова здійснити <span>різноманітні кріплення та зварювальні роботи.</span> Ми відкриті до креативних викликів і завжди готові запропонувати вам інноваційні рішення, які задовольнять ваші потреби. </p>
+                            <button data-goto=".works" class="services__content-button">Приклади наших робіт</button>
+                        </div>
+                        <img src="img/services-installation.jpg" alt="designing" class="services__img">
+                    </div>
+                    <div class="gap"></div>
+                    <div class="services__block">
+                        <div class="services__content">
+                            <h3 class="services__content-title">Захист:</h3>
+                            <p class="services__content-text">Ми надаємо особливу увагу якості кожної деталі і пропонуємо послуги <span>полімерного фарбування за технологією порошкового покриття, а також цинкування виробів з чорного металу,</span> щоб гарантувати їхню тривалу міцність та захист від корозії.</p>
+                            <button data-goto=".works" class="services__content-button">Приклади наших робіт</button>
+                        </div>
+                        <img src="img/services-protection.jpg" alt="designing" class="services__img">
+                    </div>
+                </section>
+            </div>
+            <section id="works" class="works container">
+                <h2 class="works__title">Наші роботи</h2>
+                <div id="works__btns">
+                    <button class="works__btn works__btn-prev"><img src="img/arrow-left.svg" alt="arrow-left"></button>
+                    <button class="works__btn works__btn-next"><img src="img/arrow-right.svg" alt="arrow-right"></button>
+                </div>
+                <div class="works__fullimg-box" id="fullImgBox">
+                    <img src="" alt="" id="fullImg">
+                    <img src="img/close-icon.svg" alt="close-icon" class="closeImage">
+                </div>
+                <div class="works__gallery" id="gallery" onclick="galleryInit(event)">
+                    <img src="img/gallery-img1.jpg" alt="work">
+                    <img src="img/gallery-img2.jpg" alt="work">
+                    <img src="img/gallery-img3.jpg" alt="work">
+                    <img src="img/gallery-img16.jpg" alt="work">
+                    <img src="img/gallery-img5.jpg" alt="work">
+                    <img src="img/gallery-img6.jpg" alt="work">
+                    <img src="img/gallery-img7.jpg" alt="work">
+                    <img src="img/gallery-img8.jpg" alt="work">
+                    <img src="img/gallery-img9.jpg" alt="work">
+                    <img src="img/gallery-img10.jpg" alt="work">
+                    <img src="img/gallery-img11.jpg" alt="work">
+                    <img src="img/gallery-img12.jpg" alt="work">
+                    <img src="img/gallery-img15.jpg" alt="work">
+                    <img src="img/gallery-img17.jpg" alt="work">
+                    <img src="img/gallery-img18.jpg" alt="work">
+                    <img src="img/gallery-img19.jpg" alt="work">
+                </div>
+            </section>
+            <section class="message container">
+                <h2 class="message__title">Залиште нам повідомлення</h2>
+                <div class="message__form">
+                    <form action="#" id="form" class="form__body">
+                       
+                        <div class="form__item">
+                            <input id="formName" placeholder="Введіть ваше ім'я" type="text" class="form__input">
+                        </div>
+                        <div class="form__item">
+                            <input id="formTel" placeholder="Введіть ваш телефон" type="text" class="form__input">
+                        </div>
+                        <div class="form__item">
+                            <input id="formEmail" placeholder="Введіть ваш email" type="text" class="form__input">
+                        </div>
+                        <div class="form__item">
+                            <textarea name="message" id="formMessage" placeholder="Введіть ваше повідомлення" class="form__textarea"></textarea>
+                        </div>
+                        <button class="form__button">Відправити</button>
+                    </form>
+                </div>
+            </section>
+        </main>
         <footer class="footer">
             <div class="footer__container container">
                 <div class="footer__logo-wrapper">
                     <a href="index.html" class="footer__logo">ART<span>PRO</span></a>
                 </div>
                 <ul class="footer__list">
+                    <li class="footer__link-title">Навігація по сайту</li>
                     <li><a href="index.html" class="footer__link">Головна</a></li>
                     <li><a href="services.html" class="footer__link">Послуги</a></li>
                     <li><a href="contacts.html" class="footer__link">Контакти</a></li>
                     <li><a href="about-us.html" class="footer__link">Про нас</a></li>
                 </ul>
-                <div class="footer__line"></div>
                 <div class="footer__tel-wrapper">
                     <h4 class="footer__tel-title">Телефони:</h4>
                     <ul class="footer__tel-list">
@@ -54,8 +136,14 @@
                     <p class="footer__address">м. Київ, вул. Оноре де Бальзака 1</p>
                 </div>
             </div>
+            <div class="footer__bottom">
+                <div class="footer__bottom-container container">
+                    <p class="footer__copyright">© ARTPRO, 2023. Всі права захищені.</p>
+                </div>
+            </div>
         </footer>
+        <img src="img/arrow-top.svg" alt="arrow" class="go-top">
     </div>
-    <script src="js/script.js"></script>
+    <script src="js/services.js"></script>
 </body>
 </html>
