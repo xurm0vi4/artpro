@@ -102,6 +102,7 @@ select {
 }
 .wrapper {
   min-height: 100%;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -116,6 +117,10 @@ body {
   font-size: 16px;
   font-weight: 400;
   background-color: #f4f4f4;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .go-top {

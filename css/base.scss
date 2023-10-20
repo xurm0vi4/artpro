@@ -116,6 +116,7 @@ select {
 }
 .wrapper{
 	min-height: 100%;
+  scroll-behavior: smooth;
 }
 .container{
   max-width: 1200px;
@@ -129,6 +130,10 @@ body{
   font-size: 16px;
   font-weight: 400;
   background-color: #f4f4f4;
+  
+}
+html {
+  scroll-behavior: smooth;
 }
 
 .go-top{
@@ -151,6 +156,7 @@ body{
   -moz-transition: all 0.5s ease 0s;
   -ms-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
+  
   &:hover{
     background-color: #ffb050;
   }

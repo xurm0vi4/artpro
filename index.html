@@ -9,14 +9,24 @@
 <body>
     <div class="wrapper">
         <header class="header">
+            <div class="header__top">
+                <div class="header__top-flex container">
+                    <p class="header__top-item header__top-email">email@gmail.com</p>
+                    <div class="header__top-tels">
+                        <p class="header__top-item header__top-tel">+38 095 000 0000</p>
+                        <p class="header__top-item header__top-tel">+38 050 000 0000</p>
+                    </div>
+                </div>
+            </div>
             <nav class="header__nav container">
                 <a href="index.html" class="header__logo_burger">ART<span>PRO</span></a>
                 <div class="burger__icon">
                     <span></span>
                 </div>
                 <div class="header__list_wrapper">
+                    <a href="index.html" class="header__logo">ART<span>PRO</span></a>
                     <ul class="header__list">
-                        <li><a href="index.html" class="header__logo">ART<span>PRO</span></a></li>
+                        <li><a href="index.html" class="header__logo_burger">ART<span>PRO</span></a></li>
                         <li><a href="index.html" class="header__link">ГОЛОВНА</a></li>
                         <li><a href="services.html" class="header__link">ПОСЛУГИ</a></li>
                         <li><a href="contacts.html" class="header__link">КОНТАКТИ</a></li>
@@ -30,20 +40,18 @@
                 <section class="intro container">
                     <h1 class="intro__title">ART<span>PRO</span></h1>
                     <p class="intro__text">Ласкаво просимо до виробничої компанії ARTPRO – вашого надійного партнера у сфері проектування, виготовлення та монтажу виробів з високоякісної нержавіючої сталі та надійного чорного металу.</p>
+                    <div class="intro__buttons container">
+                        <button data-goto=".message" class="intro__button intro__button-form">Відправити заявку</button>
+                        <a href="about-us.html" class="intro__button intro__button-about">Детальніше про нас</a>
+                    </div>
                 </section>
-                <div class="intro__buttons container">
-                    <button data-goto=".message" class="intro__button intro__button-form">Відправити заявку</button>
-                    <a href="about-us.html" class="intro__button intro__button-about">Детальніше про нас</a>
-                </div>
-                
             </div>
             <div class="services">
                 <div class="services__container container">
                     <img src="img/services-img.jpg" alt="services-img" class="services__img">
                     <section class="services__content">
                         <h3 class="services__content-title">Наші послуги</h3>
-                        <p class="services__content-subtitle">Наша компанія пропонує великий спектр послуг по виготовленню металевих конструкцій та виробів і їх обробку.</p>
-                        <p class="services__content-text">Ми пропонуємо широкий спектр якісних послуг у сфері проектування, виготовлення та монтажу виробів з високоякісної нержавіючої сталі та надійного чорного металу. Наші експерти з радістю пропонують вам все, що створить неповторний образ вашого простору, дбають про якість кожної деталі та готові здійснити широкий спектр кріплення та зварювальних робіт з великою увагою до деталей.</p>
+                        <p class="services__content-text">Наша компанія пропонує великий спектр послуг по виготовленню металевих конструкцій та виробів і їх обробку. Ми пропонуємо широкий спектр якісних послуг у сфері проектування, виготовлення та монтажу виробів з високоякісної нержавіючої сталі та надійного чорного металу. Наші експерти з радістю пропонують вам все, що створить неповторний образ вашого простору, дбають про якість кожної деталі та готові здійснити широкий спектр кріплення та зварювальних робіт з великою увагою до деталей.</p>
                         <a href="services.html" class="services__button">Детальніше про наші послуги</a>
                     </section>
                 </div>
@@ -118,27 +126,31 @@
                     <img src="img/gallery-img19.jpg" alt="work">
                 </div>
             </section>
-            <section class="message container">
-                <h2 class="message__title">Залиште нам повідомлення</h2>
-                <div class="message__form">
+            <div class="message container">
+                <section class="message__form">
+                    <h2 class="message__title">Залиште нам повідомлення</h2>
                     <form action="#" id="form" class="form__body">
                         
                         <div class="form__item">
+                            <label class="form__label">Ім'я</label>
                             <input id="formName" placeholder="Введіть ваше ім'я" type="text" class="form__input">
                         </div>
                         <div class="form__item">
-                            <input id="formTel" placeholder="Введіть ваш телефон" type="text" class="form__input">
+                            <label class="form__label">Номер телефону</label>
+                            <input id="formTel" placeholder="Введіть ваш номер телефону" type="text" class="form__input">
                         </div>
                         <div class="form__item">
+                            <label class="form__label">Email</label>
                             <input id="formEmail" placeholder="Введіть ваш email" type="text" class="form__input">
                         </div>
                         <div class="form__item">
+                            <label class="form__label">Текстове повідомлення</label>
                             <textarea name="message" id="formMessage" placeholder="Введіть ваше повідомлення" class="form__textarea"></textarea>
                         </div>
                         <button type="submit" class="form__button">Відправити</button>
                     </form>
-                </div>
-            </section>
+                </section>
+            </div>
         </main>
         <footer class="footer">
             <div class="footer__container container">

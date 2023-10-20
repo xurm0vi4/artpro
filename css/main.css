@@ -7,8 +7,8 @@
 }
 
 .intro__wrapper {
-  padding: 350px 0;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url(../img/intro-bg.jpg) 30%/cover no-repeat;
+  height: 100vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url(../img/pexels-kateryna-babaieva-3186949.jpg) 30%/cover no-repeat;
 }
 
 .intro {
@@ -16,8 +16,12 @@
   position: relative;
   z-index: 10;
   padding: 46px 84px;
-  border-bottom: 3px solid #fff;
-  border-top: 3px solid #fff;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
 }
 
 .intro__title {
@@ -55,7 +59,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  padding: 15px 55px;
+  padding: 20px 40px;
   outline: none;
   border: none;
   cursor: pointer;
@@ -65,6 +69,7 @@
   -ms-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
   text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
 }
 
 .intro__button-about {
@@ -80,7 +85,7 @@
   color: #000;
 }
 .intro__button-form:hover {
-  background-color: #333;
+  background-color: #444;
   color: #fff;
 }
 
@@ -134,7 +139,7 @@
   margin-top: 50px;
   padding: 20px 40px;
   border: 2px #FFF solid;
-  font-size: 20px;
+  font-size: 16px;
   transition: all 0.5s ease 0s;
   -webkit-transition: all 0.5s ease 0s;
   -moz-transition: all 0.5s ease 0s;
@@ -176,7 +181,7 @@
   padding: 30px 40px;
   color: #000;
   text-align: left;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 10px rgba(140, 140, 140, 0.15);
 }
 
 .advantages__card-icon {
@@ -266,20 +271,20 @@
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 10px rgba(140, 140, 140, 0.15);
   cursor: pointer;
-  transition: all 1s ease 0s;
-  -webkit-transition: all 1s ease 0s;
-  -moz-transition: all 1s ease 0s;
-  -ms-transition: all 1s ease 0s;
-  -o-transition: all 1s ease 0s;
+  transition: all 0.5s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
 }
 .works__gallery img:hover {
-  transform: scale(0.9);
-  -webkit-transform: scale(0.9);
-  -moz-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  -o-transform: scale(0.9);
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }
 
 #works__btns {
@@ -405,7 +410,7 @@
   .intro__button {
     font-size: 14px;
     font-weight: 600;
-    padding: 10px 30px;
+    padding: 15px 30px;
   }
   .services__img {
     height: 300px;
@@ -418,7 +423,6 @@
     width: 75%;
   }
   .works__btn {
-    height: 40px;
     width: 40px;
   }
   .works__btn-next {
