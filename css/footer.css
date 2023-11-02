@@ -82,11 +82,14 @@
 }
 
 .footer__tel-list li {
+  margin-top: 10px;
+}
+.footer__tel-list a {
   color: #FFF;
   font-size: 14px;
   font-weight: 400;
   line-height: normal;
-  margin-top: 10px;
+  text-decoration: none;
 }
 
 .footer__email-title {
@@ -98,6 +101,8 @@
 }
 
 .footer__email {
+  display: block;
+  text-decoration: none;
   color: #FFF;
   font-size: 14px;
   font-weight: 400;

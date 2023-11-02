@@ -8,7 +8,7 @@
 
 .intro__wrapper {
   height: 100vh;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url(../img/pexels-kateryna-babaieva-3186949.jpg) 30%/cover no-repeat;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url(../img/intro-bg.jpg) 30%/cover no-repeat;
 }
 
 .intro {
@@ -100,9 +100,14 @@
   align-items: center;
 }
 
-.services__img {
+.services__img-wrapper {
   width: 45%;
   height: 500px;
+}
+
+.services__img {
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -322,11 +327,15 @@
   .intro {
     padding: 30px 55px;
   }
-  .services__img {
+  .services__img-wrapper {
     width: 47%;
     height: 500px;
+  }
+  .services__img {
     -o-object-fit: cover;
        object-fit: cover;
+    width: 100%;
+    height: 100%;
   }
   .services__content {
     max-width: 47%;
@@ -362,11 +371,9 @@
     justify-content: space-between;
     align-items: start;
   }
-  .services__img {
+  .services__img-wrapper {
     width: 100%;
     height: 500px;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
   .services__content {
     max-width: 70%;
@@ -412,7 +419,7 @@
     font-weight: 600;
     padding: 15px 30px;
   }
-  .services__img {
+  .services__img-wrapper {
     height: 300px;
   }
   .services__content {
@@ -420,7 +427,7 @@
     padding: 50px 0;
   }
   .advantages__card {
-    width: 75%;
+    width: 90%;
   }
   .works__btn {
     width: 40px;

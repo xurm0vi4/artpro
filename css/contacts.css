@@ -40,13 +40,6 @@
   align-items: center;
 }
 
-.contacts__img {
-  max-width: 45%;
-  height: 500px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .contacts__main {
   color: #fff;
   max-width: 45%;
@@ -60,16 +53,20 @@
 }
 
 .contacts__tel {
+  text-decoration: none;
+  display: block;
   font-size: 20px;
   font-weight: 600;
   color: #DA9036;
 }
 
 .contacts__email {
+  text-decoration: none;
   margin-top: 10px;
   font-size: 20px;
   font-weight: 600;
   color: #DA9036;
+  display: block;
 }
 
 .contacts__address {
@@ -110,7 +107,7 @@
   width: 25px;
   height: 25px;
   display: inline-block;
-  background: url(../img/telephone.svg) 0 0/contain no-repeat;
+  background: url(../img/icons/telephone.svg) 0 0/contain no-repeat;
 }
 
 .email-title {
@@ -124,7 +121,7 @@
   width: 25px;
   height: 25px;
   display: inline-block;
-  background: url(../img/email.svg) 0 0/contain no-repeat;
+  background: url(../img/icons/email.svg) 0 0/contain no-repeat;
 }
 
 .address-title {
@@ -138,7 +135,7 @@
   width: 25px;
   height: 25px;
   display: inline-block;
-  background: url(../img/address.svg) 0 0/contain no-repeat;
+  background: url(../img/icons/address.svg) 0 0/contain no-repeat;
 }
 
 .message__form {
@@ -262,9 +259,6 @@
 }
 
 @media (max-width: 991px) {
-  .contacts__img {
-    max-width: 47%;
-  }
   .contacts__main {
     max-width: 47%;
   }
@@ -281,17 +275,12 @@
     flex-direction: column;
     gap: 50px;
     margin-top: 50px;
-    align-items: start;
-  }
-  .contacts__img {
-    max-width: 100%;
-    height: 500px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    align-items: center;
   }
   .contacts__main {
     text-align: left;
-    max-width: 100%;
+    min-width: 100%;
+    padding-left: 15px;
   }
   .contacts__content-title {
     font-size: 20px;
@@ -305,6 +294,9 @@
   .contacts__address {
     font-size: 16px;
   }
+  .message {
+    margin-top: 50px;
+  }
 }
 @media (max-width: 576px) {
   .contacts {
@@ -315,8 +307,5 @@
   }
   .contacts__subtitle {
     font-size: 20px;
-  }
-  .contacts__img {
-    height: 300px;
   }
 }/*# sourceMappingURL=contacts.css.map */

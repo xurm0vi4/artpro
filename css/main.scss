@@ -10,7 +10,7 @@
 //intro
 .intro__wrapper {
     height: 100vh;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.70) 100%), url(../img/pexels-kateryna-babaieva-3186949.jpg) 30%/cover no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.70) 100%), url(../img/intro-bg.jpg) 30%/cover no-repeat;
     
 }
 
@@ -100,9 +100,14 @@
     justify-content: space-between;
     align-items: center;
 }
-.services__img{
+.services__img-wrapper{
     width: 45%;
     height: 500px;
+}
+
+.services__img{
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 .services__content{
@@ -334,10 +339,14 @@
 
     //services
     
-    .services__img{
+    .services__img-wrapper{
         width: 47%;
         height: 500px;
+    }
+    .services__img{
         object-fit: cover;
+        width: 100%;
+        height: 100%;
     }
     .services__content{
         max-width: 47%;
@@ -383,10 +392,10 @@
         justify-content: space-between;
         align-items: start;
     }
-    .services__img{
+    .services__img-wrapper{
         width: 100%;
         height: 500px;
-        object-fit: cover;
+        
     }
     .services__content{
         max-width: 70%;
@@ -452,7 +461,7 @@
 }
     //services
 
-    .services__img{
+    .services__img-wrapper{
         height: 300px;
     }
     .services__content{
@@ -463,7 +472,7 @@
     //advantages
 
     .advantages__card {
-        width: 75%;
+        width: 90%;
     }
 
     //works gallery

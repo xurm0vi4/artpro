@@ -11,26 +11,26 @@
         <header class="header">
             <div class="header__top">
                 <div class="header__top-flex container">
-                    <p class="header__top-item header__top-email">email@gmail.com</p>
+                    <a href="mailto:example@gmail.com" class="header__top-item header__top-email">email@gmail.com</a>
                     <div class="header__top-tels">
-                        <p class="header__top-item header__top-tel">+38 095 000 0000</p>
-                        <p class="header__top-item header__top-tel">+38 050 000 0000</p>
+                        <a href="tel:38095000000" class="header__top-item header__top-tel">+38 095 000 0000</a>
+                        <a href="tel:38050000000" class="header__top-item header__top-tel">+38 050 000 0000</a>
                     </div>
                 </div>
             </div>
             <nav class="header__nav container">
-                <a href="index.html" class="header__logo_burger">ART<span>PRO</span></a>
+                <a href="./index.html" class="header__logo_burger">ART<span>PRO</span></a>
                 <div class="burger__icon">
                     <span></span>
                 </div>
                 <div class="header__list_wrapper">
                     <a href="index.html" class="header__logo">ART<span>PRO</span></a>
                     <ul class="header__list">
-                        <li><a href="index.html" class="header__logo_burger">ART<span>PRO</span></a></li>
-                        <li><a href="index.html" class="header__link">ГОЛОВНА</a></li>
-                        <li><a href="services.html" class="header__link">ПОСЛУГИ</a></li>
-                        <li><a href="contacts.html" class="header__link">КОНТАКТИ</a></li>
-                        <li><a href="about-us.html" class="header__link">ПРО НАС</a></li>
+                        <li><a href="./index.html" class="header__logo_burger">ART<span>PRO</span></a></li>
+                        <li><a href="./index.html" class="header__link">ГОЛОВНА</a></li>
+                        <li><a href="./services.html" class="header__link">ПОСЛУГИ</a></li>
+                        <li><a href="./contacts.html" class="header__link">КОНТАКТИ</a></li>
+                        <li><a href="./about-us.html" class="header__link">ПРО НАС</a></li>
                     </ul>
                 </div>
             </nav>
@@ -42,17 +42,20 @@
                     <p class="intro__text">Ласкаво просимо до виробничої компанії ARTPRO – вашого надійного партнера у сфері проектування, виготовлення та монтажу виробів з високоякісної нержавіючої сталі та надійного чорного металу.</p>
                     <div class="intro__buttons container">
                         <button data-goto=".message" class="intro__button intro__button-form">Відправити заявку</button>
-                        <a href="about-us.html" class="intro__button intro__button-about">Детальніше про нас</a>
+                        <a href="./about-us.html" class="intro__button intro__button-about">Детальніше про нас</a>
                     </div>
                 </section>
             </div>
             <div class="services">
                 <div class="services__container container">
-                    <img src="img/services-img.jpg" alt="services-img" class="services__img">
+                    <picture class="services__img-wrapper">
+                        <source srcset="./img/services/services-img.webp" type="image/webp" />
+                        <img src="./img/services/services-img.jpg" alt="services-img" class="services__img">
+                    </picture>
                     <section class="services__content">
                         <h3 class="services__content-title">Наші послуги</h3>
                         <p class="services__content-text">Наша компанія пропонує великий спектр послуг по виготовленню металевих конструкцій та виробів і їх обробку. Ми пропонуємо широкий спектр якісних послуг у сфері проектування, виготовлення та монтажу виробів з високоякісної нержавіючої сталі та надійного чорного металу. Наші експерти з радістю пропонують вам все, що створить неповторний образ вашого простору, дбають про якість кожної деталі та готові здійснити широкий спектр кріплення та зварювальних робіт з великою увагою до деталей.</p>
-                        <a href="services.html" class="services__button">Детальніше про наші послуги</a>
+                        <a href="./services.html" class="services__button">Детальніше про наші послуги</a>
                     </section>
                 </div>
             </div> 
@@ -60,37 +63,37 @@
                 <h2 class="advantages__title">Наші переваги</h2>
                 <div class="advantages__cards">
                     <div class="advantages__card">
-                        <img src="img/shield.svg" alt="shield" class="advantages__card-icon">
+                        <img src="./img/icons/shield.svg" alt="shield" class="advantages__card-icon">
                         <h3 class="advantages__card-title">Надійність</h3>
                         <p class="advantages__card-text">Ми гарантуємо надійність кожного нашого виробу.</p>
                         
                     </div>
                     <div class="advantages__card">
-                        <img src="img/lightning.svg" alt="speed" class="advantages__card-icon">
+                        <img src="./img/icons/lightning.svg" alt="speed" class="advantages__card-icon">
                         <h3 class="advantages__card-title">Швидкість роботи</h3>
                         <p class="advantages__card-text">Ми стараємося робити ваші замовлення максимально швидко.</p>
                         
                     </div>
                     <div class="advantages__card">
-                        <img src="img/coin.svg" alt="coins" class="advantages__card-icon">
+                        <img src="./img/icons/coin.svg" alt="coins" class="advantages__card-icon">
                         <h3 class="advantages__card-title">Вигідні ціни</h3>
                         <p class="advantages__card-text">Ми пропонуємо якісні послуги за найнижчими цінами.</p>
                         
                     </div>
                     <div class="advantages__card">
-                        <img src="img/star.svg" alt="shield" class="advantages__card-icon">
+                        <img src="./img/icons/star.svg" alt="shield" class="advantages__card-icon">
                         <h3 class="advantages__card-title">Великий досвід</h3>
                         <p class="advantages__card-text">За нашими плечами величезний досвід робіт будь-якої складності.</p>
                         
                     </div>
                     <div class="advantages__card">
-                        <img src="img/checkmark.svg" alt="speed" class="advantages__card-icon">
+                        <img src="./img/icons/checkmark.svg" alt="speed" class="advantages__card-icon">
                         <h3 class="advantages__card-title">Гарна якість</h3>
                         <p class="advantages__card-text">Ми гарантуємо високу якість кожного нашого виробу.</p>
                         
                     </div>
                     <div class="advantages__card">
-                        <img src="img/light-bulb.svg" alt="coins" class="advantages__card-icon">
+                        <img src="./img/icons/light-bulb.svg" alt="coins" class="advantages__card-icon">
                         <h3 class="advantages__card-title">Креативність</h3>
                         <p class="advantages__card-text">Ми не боїмося викликів та креативно виконуємо нашу роботу.</p>
                         
@@ -100,52 +103,50 @@
             <section id="works" class="works container">
                 <h2 class="works__title">Наші роботи</h2>
                 <div id="works__btns">
-                    <button class="works__btn works__btn-prev"><img src="img/arrow-left.svg" alt="arrow-left"></button>
-                    <button class="works__btn works__btn-next"><img src="img/arrow-right.svg" alt="arrow-right"></button>
+                    <button class="works__btn works__btn-prev"><img src="./img/icons/arrow-left.svg" alt="arrow-left"></button>
+                    <button class="works__btn works__btn-next"><img src="./img/icons/arrow-right.svg" alt="arrow-right"></button>
                 </div>
                 <div class="works__fullimg-box" id="fullImgBox">
                     <img src="" alt="" id="fullImg">
-                    <img src="img/close-icon.svg" alt="close-icon" class="closeImage">
+                    <img src="./img/icons/close-icon.svg" alt="close-icon" class="closeImage">
                 </div>
                 <div class="works__gallery" id="gallery" onclick="galleryInit(event)">
-                    <img src="img/gallery-img1.jpg" alt="work">
-                    <img src="img/gallery-img2.jpg" alt="work">
-                    <img src="img/gallery-img3.jpg" alt="work">
-                    <img src="img/gallery-img16.jpg" alt="work">
-                    <img src="img/gallery-img5.jpg" alt="work">
-                    <img src="img/gallery-img6.jpg" alt="work">
-                    <img src="img/gallery-img7.jpg" alt="work">
-                    <img src="img/gallery-img8.jpg" alt="work">
-                    <img src="img/gallery-img9.jpg" alt="work">
-                    <img src="img/gallery-img10.jpg" alt="work">
-                    <img src="img/gallery-img11.jpg" alt="work">
-                    <img src="img/gallery-img12.jpg" alt="work">
-                    <img src="img/gallery-img15.jpg" alt="work">
-                    <img src="img/gallery-img17.jpg" alt="work">
-                    <img src="img/gallery-img18.jpg" alt="work">
-                    <img src="img/gallery-img19.jpg" alt="work">
+                    <img src="./img/gallery/gallery-img1.jpg" alt="work">
+                    <img src="./img/gallery/gallery-img2.jpg" alt="work">
+                    <img src="./img/gallery/gallery-img3.jpg" alt="work">
+                    <img src="./img/gallery/gallery-img4.jpg" alt="work">
+                    <img src="./img/gallery/gallery-img5.jpg" alt="work">
+                    <img src="./img/gallery/gallery-img6.jpg" alt="work">
+                    <img src="./img/gallery/gallery-img7.jpg" alt="work">
+                    <img src="./img/gallery/gallery-img8.jpg" alt="work">
+                    <img src="./img/gallery/gallery-img9.jpg" alt="work">
+                    <img src="./img/gallery/gallery-img10.jpg" alt="work">
+                    <img src="./img/gallery/gallery-img11.jpg" alt="work">
+                    <img src="./img/gallery/gallery-img12.jpg" alt="work">
+                    <img src="./img/gallery/gallery-img13.jpg" alt="work">
+                    <img src="./img/gallery/gallery-img14.jpg" alt="work">
+                    <img src="./img/gallery/gallery-img15.jpg" alt="work">
+                    <img src="./img/gallery/gallery-img16.jpg" alt="work">
                 </div>
             </section>
             <div class="message container">
                 <section class="message__form">
                     <h2 class="message__title">Залиште нам повідомлення</h2>
                     <form action="#" id="form" class="form__body">
-                        
                         <div class="form__item">
-                            <label class="form__label">Ім'я</label>
-                            <input id="formName" placeholder="Введіть ваше ім'я" type="text" class="form__input">
+                            <label class="form__label">Ім'я* <input id="formName" data-reg="^[А-Яа-яЁёЇїІіЄєҐґ']+$" placeholder="Введіть ваше ім'я" type="text" name="name" class="form__input" autocomplete="off"></label>
                         </div>
                         <div class="form__item">
-                            <label class="form__label">Номер телефону</label>
-                            <input id="formTel" placeholder="Введіть ваш номер телефону" type="text" class="form__input">
+                            <label class="form__label">Номер телефону* <input id="formTel" data-reg="^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$" placeholder="Введіть ваш номер телефону" name="tel" type="text" class="form__input" autocomplete="off"></label>
+                            
                         </div>
                         <div class="form__item">
-                            <label class="form__label">Email</label>
-                            <input id="formEmail" placeholder="Введіть ваш email" type="text" class="form__input">
+                            <label class="form__label">Email* <input id="formEmail" data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$" placeholder="Введіть ваш email" type="text" name="email" class="form__input _email" autocomplete="off"></label>
+                            
                         </div>
                         <div class="form__item">
-                            <label class="form__label">Текстове повідомлення</label>
-                            <textarea name="message" id="formMessage" placeholder="Введіть ваше повідомлення" class="form__textarea"></textarea>
+                            <label class="form__label">Текстове повідомлення <textarea name="message" id="formMessage" placeholder="Введіть ваше повідомлення" class="form__textarea"></textarea></label>
+                            
                         </div>
                         <button type="submit" class="form__button">Відправити</button>
                     </form>
@@ -155,25 +156,25 @@
         <footer class="footer">
             <div class="footer__container container">
                 <div class="footer__logo-wrapper">
-                    <a href="index.html" class="footer__logo">ART<span>PRO</span></a>
+                    <a href="./index.html" class="footer__logo">ART<span>PRO</span></a>
                 </div>
                 <ul class="footer__list">
                     <li class="footer__link-title">Навігація по сайту</li>
-                    <li><a href="index.html" class="footer__link">Головна</a></li>
-                    <li><a href="services.html" class="footer__link">Послуги</a></li>
-                    <li><a href="contacts.html" class="footer__link">Контакти</a></li>
-                    <li><a href="about-us.html" class="footer__link">Про нас</a></li>
+                    <li><a href="./index.html" class="footer__link">Головна</a></li>
+                    <li><a href="./services.html" class="footer__link">Послуги</a></li>
+                    <li><a href="./contacts.html" class="footer__link">Контакти</a></li>
+                    <li><a href="./about-us.html" class="footer__link">Про нас</a></li>
                 </ul>
                 <div class="footer__tel-wrapper">
                     <h4 class="footer__tel-title">Телефони:</h4>
                     <ul class="footer__tel-list">
-                        <li>+38 095 000 00 00 </li>
-                        <li>+38 050 000 00 00 </li>
+                        <li><a href="tel:380950000000">+38 095 000 00 00 </a></li>
+                        <li><a href="tel:380500000000">+38 050 000 00 00 </a></li>
                     </ul>
                 </div>
                 <div class="footer__email-wrapper">
                     <h4 class="footer__email-title">Email:</h4>
-                    <p class="footer__email">email@gmail.com</p>
+                    <a href="mailto:example@gmail.com" class="footer__email">email@gmail.com</a>
                 </div>
                 <div class="footer__address-wrapper">
                     <h4 class="footer__address-title">Адреса:</h4>
@@ -186,8 +187,9 @@
                 </div>
             </div>
         </footer>
-        <img src="img/arrow-top.svg" alt="arrow" class="go-top">
+        <img src="./img/icons/arrow-top.svg" alt="arrow" class="go-top">
     </div>
-    <script src="js/script.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>
